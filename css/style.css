@@ -7,18 +7,29 @@
 }
 html{
     font-size: 62.5%;
-
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
 }
 body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
 }
-.titulo{
-    text-align: center;
+/*Tipografias*/
+h1{
     font-size: 3.8rem;
-    
-
 }
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h1, h2, h3{
+    text-align: center;
+}
+/*Titulos*/
 .titulo span{
     font-size: 2rem;
 }
@@ -43,6 +54,7 @@ body{
     /*justify-content sirev para filas*/
     font-weight: bold;
     font-size: 2rem;
+    text-align: center;
 }
 .navegacion-principal a{
     padding: 1rem;
@@ -57,4 +69,50 @@ body{
     .navegacion-principal{
         flex-direction: row;
     }
+}
+/*  Hero */
+
+.hero{
+    background-image: url(../images/hero.jpg);/*../ es para regresar un nivel de directorio*/
+    background-repeat: no-repeat;
+    background-size: cover; /*cubrir la imagen en todo el tamaño de la pantalla*/
+    height: 450px;
+    position: relative; /*el padre debe ser relativo*/
+}
+.contenedor-hero{
+    position: absolute; /*el hijo debe ser absolute*/
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    /*para alinear vertical y horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-hero h2, .contenedor-hero p{
+    color: var(--blanco);
+}
+.ubicacion{
+    display: flex;
+    align-items: flex-end;
+}
+.boton{
+    background-color: var(--secundario); /*color del fondo del boton*/
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border-radius: .5rem; /*esquinas redondeadas del boton*/
+    color: var(--blanco); /*color de la letra*/
+    margin-top: 3rem; /*espacio exterior hacia arriba*/
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase; /*convertir a mayusculas*/
+    text-align: center;
+    width: 90%;
+}
+@media (min-width: px){
+    .boton{
+        width: auto;
+    }
+  
 }
