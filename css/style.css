@@ -110,7 +110,7 @@ h1, h2, h3{
     text-align: center;
     width: 90%;
 }
-@media (min-width: px){
+@media (min-width: 768px){
     .boton{
         width: auto;
     }
