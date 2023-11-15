@@ -40,7 +40,7 @@
 
     </section>
     <main class="contenedor sombra">
-        <h2>Mis servicios</h2>
+        <h2 class="servicios-heading">Mis servicios</h2>
             <div class="servicios">
                 <!--seccion de diseño-->
                 
@@ -54,8 +54,8 @@
                             <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
                             <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
                         </svg>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vero fugit fuga unde dicta dolores natus. Quam, consequatur a minima voluptatum suscipit officia magnam quaerat aut impedit eligendi quibusdam fugit.</p>
                     </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vero fugit fuga unde dicta dolores natus. Quam, consequatur a minima voluptatum suscipit officia magnam quaerat aut impedit eligendi quibusdam fugit.</p>
                 </section>
                 <section class="servicio">
                     <h3>Aplicaciones móviles</h3>
@@ -77,8 +77,8 @@
                             <path d="M9 18l0 3" />
                             <path d="M15 18l0 3" />
                         </svg>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem rerum nam blanditiis quia praesentium quos, vitae excepturi at asperiores velit facere dicta tempora? Reprehenderit nemo quia libero eveniet quaerat?</p>
                     </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem rerum nam blanditiis quia praesentium quos, vitae excepturi at asperiores velit facere dicta tempora? Reprehenderit nemo quia libero eveniet quaerat?</p>
                 </section>
                 <section class="servicio">
                     <h3>E-commerce</h3>
@@ -90,47 +90,49 @@
                             <path d="M7 15l.01 0" />
                             <path d="M11 15l2 0" />
                         </svg>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptates consectetur molestias sit soluta accusantium fugiat quidem deleniti iure molestiae qui debitis vero commodi, ratione porro dolorum aspernatur minus. Perferendis?</p>                
                     </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptates consectetur molestias sit soluta accusantium fugiat quidem deleniti iure molestiae qui debitis vero commodi, ratione porro dolorum aspernatur minus. Perferendis?</p>                
                 </section>
             </div>
-    </main>
     <section>
-        <h2>Contacto</h2>
+        <h2 class="contacto-heading">Contacto</h2>
+        <form class="formulario">
+            <fieldset>
+                <legend>Llena tus datos para contactarnos.</legend>
+                <div class="contenedor-campos">
+                    <div class"campo">
+                        <label>
+                            Nombre
+                        </label>
+                        <input type="text" placeholder="Nombre completo">
+                    </div>
+                    <div class"campo">
+                        <label >
+                            Teléfono
+                        </label>
+                        <input type="tel" placeholder="Tu numero">
+                    </div>
+                    <div class"campo">
+                        <label>
+                            Correo
+                        </label>
+                        <input type="email" placeholder="Tu correo">
+                    </div class>
+                    <div class"campo">
+                        <label>
+                            Mensaje
+                        </label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <div class="alinear-derecha flex">
+                    <input class="boton w-sm-100" type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
     </section>
-    <form>
-        <fieldset>
-            <legend>Llena tus datos para contactarnos.</legend>
-            <div>
-            <label>
-                Nombre
-            </label>
-            <input type="text" placeholder="Nombre completo">
-            </div>
-            <div>
-            <label >
-                Teléfono
-            </label>
-            <input type="tel" placeholder="Tu numero">
-            </div>
-            <div>
-            <label>
-                Correo
-            </label>
-            <input type="email" placeholder="Tu correo">
-            </div>
-            <div>
-            <label>
-                Mensaje
-            </label>
-            <textarea></textarea>
-            </div>
-            <div>
-                <input type="submit" value="Enviar">
-            </div>
-        </fieldset>
-    </form>
-    <footer>
+    </main>
+    <footer class="footer">
         <p>Todos los derechos reservados ©. Roger Diego Herrera Medina</p>
     </footer>
 </body>
